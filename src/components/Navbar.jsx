@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Wrapper from '../assets/wrappers/Navbar'
 Wrapper
 import { FaAlignLeft, FaCaretDown, FaHome, FaUserCircle } from 'react-icons/fa'
-import Logo from './logo'
+import Logo from './Logo'
 import { useDispatch, useSelector } from 'react-redux'
 import {
   clearStore,
