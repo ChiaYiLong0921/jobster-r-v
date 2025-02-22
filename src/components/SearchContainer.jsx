@@ -23,7 +23,7 @@ const SearchContainer = () => {
     dispatch(clearFilters())
   }
   const debounce = () => {
-    console.log('debounce called')
+    // console.log('debounce called')
 
     let timeoutID
     return (e) => {
