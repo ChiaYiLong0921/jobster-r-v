@@ -5,18 +5,18 @@ status = 200
 
 [[redirects]]
 from = "/all-jobs"
-to = "/index.html/all-jobs"
+to = "/index.html"
 status = 200
 force = true
 
 [[redirects]]
 from = "/add-job"
-to = "/index.html/add-job"
+to = "/index.html"
 status = 200
 force = true
 
 [[redirects]]
 from = "/profile"
-to = "/index.html/profile"
+to = "/index.html"
 status = 200
 force = true
