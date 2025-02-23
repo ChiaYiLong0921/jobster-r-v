@@ -2,21 +2,3 @@
 from = '/*'
 to = "/index.html"
 status = 200
-
-[[redirects]]
-from = "/all-jobs"
-to = "/"
-status = 200
-force = true
-
-[[redirects]]
-from = "/add-job"
-to = "/"
-status = 200
-force = true
-
-[[redirects]]
-from = "/profile"
-to = "/"
-status = 200
-force = true
