@@ -4,6 +4,7 @@ import {
   addUserToLocalStorage,
   removeUserFromLocalStorage,
   getUserFromLocalStorage,
+  isDebug,
 } from '../../utils'
 import { loginUserThunk, registerUserThunk, updateUserThunk } from './userThunk'
 import { clearAllJobsState } from '../allJobs/allJobsSlice'
@@ -39,6 +40,8 @@ export const clearStore = createAsyncThunk(
   'user/clearStore',
   async (message, thunkAPI) => {
     try {
+      console.log('clearStore')
+
       thunkAPI.dispatch(logoutUser(message))
       thunkAPI.dispatch(clearAllJobsState())
       thunkAPI.dispatch(clearValues())
@@ -106,6 +109,12 @@ const userSlice = createSlice({
         toast.success(`Welcome back ${user.name}`)
       })
       .addCase(loginUser.rejected, (state, { payload }) => {
+        const { error } = payload
+        console.log(error)
+
+        if (isDebug()) {
+          console.log('Login rejected payload:', payload)
+        }
         state.isLoading = false
         toast.error(payload)
       })

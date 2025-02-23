@@ -9,7 +9,9 @@ export const registerUserThunk = async (url, user, thunkAPI) => {
     // console.log(user)
     return resp.data
   } catch (error) {
-    return checkForErrors(error)
+    console.log(error)
+
+    return checkForErrors(error, thunkAPI)
   }
 }
 
@@ -21,7 +23,9 @@ export const loginUserThunk = async (url, user, thunkAPI) => {
     }
     return resp.data
   } catch (error) {
-    return checkForErrors(error)
+    console.log('logging error')
+
+    return checkForErrors(error, thunkAPI)
   }
 }
 

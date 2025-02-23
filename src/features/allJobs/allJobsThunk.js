@@ -1,5 +1,4 @@
 import { checkForErrors, customFetch, isDebug } from '../../utils'
-import { checkForUnauthorizedResponse } from '../../utils/axios'
 
 export const getAllJobsThunk = async (__, thunkAPI) => {
   const { page, search, searchStatus, searchType, sort } =
