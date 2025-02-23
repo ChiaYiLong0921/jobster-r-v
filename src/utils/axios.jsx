@@ -6,8 +6,8 @@ const local_api = '//localhost:5000/api/v1'
 const render_url = 'https://temp-jobster-api-dc9e.onrender.com/api/v1'
 
 const customFetch = axios.create({
-  baseURL: local_api,
-  // baseURL: render_url,
+  // baseURL: local_api,
+  baseURL: render_url,
 })
 
 customFetch.interceptors.request.use((config) => {
