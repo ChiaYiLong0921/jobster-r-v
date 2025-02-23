@@ -28,7 +28,6 @@ export const checkForErrors = (error, thunkAPI) => {
     console.log(error)
   }
   if (error.code === 'ERR_NETWORK') {
-    toast.error('server connection error')
     return thunkAPI.rejectWithValue('server connection error')
   }
 
