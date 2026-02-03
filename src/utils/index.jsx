@@ -2,7 +2,7 @@ import { toast } from 'react-toastify'
 import { clearStore } from '../features/user/userSlice'
 
 export const isDebug = () => {
-  const isDebugging = false
+  const isDebugging = true
   return isDebugging
 }
 
