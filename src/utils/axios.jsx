@@ -2,12 +2,11 @@ import axios from 'axios'
 import { getUserFromLocalStorage, isDebug } from '.'
 import { clearStore } from '../features/user/userSlice'
 
-const local_api = '//localhost:8080/api/v1'
-const cloud_run = import.meta.env.BACKEND_URL
+const backend_url = import.meta.env.VITE_BACKEND_URL
+
 
 const customFetch = axios.create({
-  // baseURL: local_api,
-  baseURL: cloud_run,
+  baseURL: backend_url,
 })
 
 customFetch.interceptors.request.use((config) => {
