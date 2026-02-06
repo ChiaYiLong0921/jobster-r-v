@@ -1,5 +1,5 @@
 import React from 'react'
-import main from '../assets/images/main.svg'
+import main from '../assets/images/main2.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
 import { Link } from 'react-router-dom'
 import { Logo } from '../components'
@@ -16,10 +16,7 @@ const Landing = () => {
             job <span>tracking</span> app
           </h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-            quae iste! Molestias pariatur officia quam aliquam sunt distinctio
-            optio voluptatibus, perspiciatis aperiam dolores explicabo
-            repellendus magnam. Repudiandae veniam rerum magni!
+            Track your jobs application here.
           </p>
           <Link to="/register" className="btn btn-hero">
             Login/Register

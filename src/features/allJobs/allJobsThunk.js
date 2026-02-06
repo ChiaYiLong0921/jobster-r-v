@@ -25,6 +25,8 @@ export const showStatsThunk = async (_, thunkAPI) => {
   try {
     const resp = await customFetch.get('/jobs/stats')
     if (isDebug()) {
+      console.log(resp);
+      
       console.log(resp.data)
     }
     return resp.data

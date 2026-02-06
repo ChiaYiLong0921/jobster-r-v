@@ -11,6 +11,7 @@ const Stats = () => {
   useEffect(() => {
     dispatch(showStats())
   }, [])
+  
   return (
     <>
       <StatsContainer />
