@@ -9,16 +9,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vconsole@latest/dist/vconsole.min.js"></script>
-<script>
-  // 确保脚本加载完成后再初始化
-  window.onload = function() {
-    if (typeof VConsole !== 'undefined') {
-      window.vConsole = new VConsole();
-    } else {
-      console.error('vConsole 脚本加载失败，请检查网络');
-    }
-  };
-</script>
   </body>
 </html>

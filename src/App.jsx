@@ -51,6 +51,12 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  // --- force https redirect ---
+  if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost') {
+      // replacing http with https
+      window.location.replace(window.location.href.replace(/^http:/, 'https:'));
+  }
+
   return (
     <div>
       <RouterProvider router={router} />
